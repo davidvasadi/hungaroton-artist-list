@@ -76,9 +76,12 @@ export default function PageContent() {
 
   return (
     <Container maxWidth="lg" sx={{ my: 4 }}>
-      <Typography variant="h4" gutterBottom>
-        Előadók
-      </Typography>
+     <Typography variant="h4" component="h1" color='#333333'>
+    Előadók
+  </Typography>
+  <Typography variant="body1" color='#333333' sx={{ mt: 2,  mb: 2}}>
+    Találd meg a kedvenc előadóidat és böngéssz a gyűjteményben.
+  </Typography>
       <TextField
         label="Keresés"
         variant="outlined"
