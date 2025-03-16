@@ -5,7 +5,7 @@ export const metadata = {
   title: 'Hungaroton Artist List',
   description: 'Artist list application with pagination and filters',
   icons: {
-    icon: '../public/favicon.ico',
+    icon: '/favicon.ico',
   },
 };
 
