@@ -1,5 +1,4 @@
-// app/page.tsx
-'use client';
+//'use client'; 
 
 import React, { Suspense } from 'react';
 import { CircularProgress } from '@mui/material';
