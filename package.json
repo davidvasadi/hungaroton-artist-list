@@ -1,19 +1,21 @@
 {
-    "name": "hungaroton-artist-list",
-    "version": "0.1.0",
-    "scripts": {
-      "dev": "next dev",
-      "build": "next build",
-      "start": "next start"
-    },
-    "dependencies": {
-      "next": "15.2.2",
-      "react": "^18.2.0",
-      "react-dom": "^18.2.0",
-      "@mui/material": "^5.0.0",
-      "@emotion/react": "^11.0.0",
-      "@emotion/styled": "^11.0.0"
-    },
+  "name": "hungaroton-artist-list",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.4.7",
+    "next": "^15.2.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
