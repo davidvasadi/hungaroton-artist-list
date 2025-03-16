@@ -1,4 +1,3 @@
-
 'use client';
 
 import React, { useEffect, useState } from 'react';
@@ -46,7 +45,7 @@ export default function PageContent() {
       console.log('API response total:', response.total, '=> using total:', totalItems);
     } catch (error) {
       console.error('Hiba az API hívás során:', error);
-      setError('-');
+      setError('');
     }
     setLoading(false);
   };
@@ -76,12 +75,12 @@ export default function PageContent() {
 
   return (
     <Container maxWidth="lg" sx={{ my: 4 }}>
-     <Typography variant="h4" component="h1" color='#333333'>
-    Előadók
-  </Typography>
-  <Typography variant="body1" color='#333333' sx={{ mt: 2,  mb: 2}}>
-    Találd meg a kedvenc előadóidat és böngéssz a gyűjteményben.
-  </Typography>
+      <Typography variant="h4" component="h1" color="#333333">
+        Előadók
+      </Typography>
+      <Typography variant="body1" color="#333333" sx={{ mt: 2, mb: 2 }}>
+        Találd meg a kedvenc előadóidat és böngéssz a gyűjteményben.
+      </Typography>
       <TextField
         label="Keresés"
         variant="outlined"
@@ -109,17 +108,25 @@ export default function PageContent() {
           <CircularProgress sx={{ color: 'black' }} />
         </Box>
       ) : (
-        <Grid container spacing={2}>
-          {artists.map((artist) => (
-            <Grid item xs={12} sm={6} md={4} key={artist.id}>
-              <ArtistCard
-                name={artist.name}
-                portrait={artist.portrait}
-                albumCount={artist.albumCount}
-              />
+        <>
+          {artists.length === 0 ? (
+            <Typography variant="body1" sx={{ mt: 2 }}>
+              Nincs találat a keresésre.
+            </Typography>
+          ) : (
+            <Grid container spacing={2}>
+              {artists.map((artist) => (
+                <Grid item xs={12} sm={6} md={4} key={artist.id}>
+                  <ArtistCard
+                    name={artist.name}
+                    portrait={artist.portrait}
+                    albumCount={artist.albumCount}
+                  />
+                </Grid>
+              ))}
             </Grid>
-          ))}
-        </Grid>
+          )}
+        </>
       )}
 
       {total > 0 && totalPages > 1 && (
