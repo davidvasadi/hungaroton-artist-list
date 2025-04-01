@@ -1,4 +1,4 @@
-
+.env
 # dependencies
 /node_modules
 .env.local
@@ -34,7 +34,7 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-.env*
+# .env*
 
 # vercel
 .vercel
