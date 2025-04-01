@@ -1,3 +1,4 @@
+// app/components/ArtistCard.tsx
 'use client';
 
 import React from 'react';

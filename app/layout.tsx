@@ -1,5 +1,4 @@
-import React from 'react';
-import ClientThemeProvider from '../src/components/ClientThemeProvider';
+import ClientThemeProvider from './components/ClientThemeProvider';
 
 export const metadata = {
   title: 'Hungaroton Artist List',

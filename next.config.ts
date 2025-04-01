@@ -1,8 +1,13 @@
-// next.config.ts
-import type { NextConfig } from 'next';
-
-const nextConfig: NextConfig = {
-  // Nem kell megadni az appDir opciót, mert az App Router már alapértelmezetten működik.
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*', // A helyi endpoint, amit használsz
+        destination: 'https://exam.api.fotex.net/api/:path*', // Az eredeti API URL
+      },
+    ];
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

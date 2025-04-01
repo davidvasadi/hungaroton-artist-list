@@ -1,10 +1,10 @@
-//'use client'; 
+'use client';
 
 import React, { Suspense } from 'react';
 import { CircularProgress } from '@mui/material';
-import PageContent from '../src/components/PageContent';
+import PageContent from './components/PageContent';
 
-export const dynamic = 'force-dynamic'; // Ez kényszeríti a dinamikus renderelést
+export const dynamic = 'force-dynamic';
 
 export default function HomePage() {
   return (
