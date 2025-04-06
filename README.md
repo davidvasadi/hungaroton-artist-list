@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎵 Hungaroton Artist List
 
-## Getting Started
+**View online:** [Hungaroton Artist List](https://main.d32fz1viwiq45h.amplifyapp.com/?page=1/)
 
-First, run the development server:
+A searchable and filterable list of Hungaroton artists built with modern frontend tools. Ideal for exploring and presenting a collection of musicians with their associated genres and albums.
+
+## 🌟 Key Features:
+
+- Display of artists with names, photos, genres, and album counts
+- Instant search and filter functionality
+- Dynamic data fetching via REST API
+- Clean and accessible user interface
+- Fully responsive layout for mobile and desktop
+
+## 🛠️ Technologies Used:
+
+- Next.js (React)
+- TypeScript
+- Tailwind CSS
+- REST API integration (fetching artist data)
+- Cypress (for end-to-end testing)
+
+## 🚀 Installation and Usage:
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 👤 Author
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Created by: **David Vasadi**  
+[Visit my website](https://davelopment.hu) • [Live demo](https://main.d32fz1viwiq45h.amplifyapp.com/?page=1/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# 🎵 Hungaroton Előadói Lista
 
-To learn more about Next.js, take a look at the following resources:
+**Megtekintés:** [Hungaroton Artist List](https://main.d32fz1viwiq45h.amplifyapp.com/?page=1/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Kereshető és szűrhető Hungaroton előadói lista modern frontend eszközökkel. Kiváló választás zenészek, műfajok és albumok rendezett megjelenítésére.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🌟 Főbb funkciók:
 
-## Deploy on Vercel
+- Előadók megjelenítése névvel, képpel, műfajjal és album számmal
+- Azonnali keresés és szűrés
+- Dinamikus adatlekérés REST API-n keresztül
+- Letisztult, jól használható felhasználói felület
+- Teljesen reszponzív elrendezés mobilra és asztali gépre
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Használt technológiák:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js (React alapokon)
+- TypeScript
+- Tailwind CSS
+- REST API integráció (előadói adatok lekérése)
+- Cypress (végpont teszteléshez)
+
+## 🚀 Telepítési útmutató:
+
+```bash
+# Függőségek telepítése
+npm install
+
+# Fejlesztői szerver indítása
+npm run dev
+
+# Build készítése éles környezetre
+npm run build
+```
+
+## 👤 Szerző
+
+Készítette: **Vasadi Dávid**  
+[Látogass el a weboldalamra](https://davelopment.hu) • [Élő demó](https://main.d32fz1viwiq45h.amplifyapp.com/?page=1/)
+
